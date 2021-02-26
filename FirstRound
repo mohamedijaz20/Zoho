@@ -1,3 +1,5 @@
+package Test;
+
 public class New {
 
 	public static void main(String[] args) {
@@ -7,9 +9,14 @@ public class New {
 		for(int i=1;i<=s.length();i++) {
 			for(int j=1;j<=sp;j++) 
 				System.out.print(" ");
-				for(int k=half;k<i;k++)
-					System.out.print(s.charAt(k));
-				System.out.println();
+				for(int k=0,a=half;k<i;k++,a++)
+				{
+					if(a==s.length())
+						a=0;
+					System.out.print(s.charAt(a));
+					
+				}
+				System.out.println();	
 				sp--;
 		}
 
